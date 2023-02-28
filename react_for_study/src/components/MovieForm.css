@@ -1,12 +1,14 @@
 .Movie {
   padding: 40px;
 }
-
-input[type="text"] {
-  width: 200px;
+.MovieForm {
+  display: flex;
 }
-input[type="number"] {
-  width: 50px;
+
+input[type="text"],
+[type="number"] {
+  margin-left: 5px;
+  width: 200px;
 }
 
 ul > li > span {
@@ -14,11 +16,20 @@ ul > li > span {
 }
 
 button {
+  margin-left: 10px;
   background-color: rgb(173, 170, 170);
   border-radius: 10px;
+  width: 50px;
+  height: 45px;
   border: 1px solid black;
   cursor: pointer;
 }
+
+.show_button {
+  width: 50px;
+  height: 20px;
+}
+
 label {
   display: block;
 }
