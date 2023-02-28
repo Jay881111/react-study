@@ -14,6 +14,9 @@ input[type="text"],
 ul > li > span {
   margin-left: 3px;
 }
+form {
+  display: flex;
+}
 
 button {
   margin-left: 10px;

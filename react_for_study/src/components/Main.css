@@ -1,0 +1,11 @@
+ul > li {
+  margin-left: 16px;
+}
+
+ul > p {
+  font-weight: bold;
+}
+
+ul {
+  margin-bottom: 50px;
+}

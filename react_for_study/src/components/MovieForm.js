@@ -13,10 +13,14 @@ function MovieForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMovies([
-      ...movies,
-      { key: Date.now(), title: newMovieTitle, year: newMovieYear },
-    ]);
+    if (newMovieTitle !== "" && newMovieYear !== "")
+      setMovies([
+        ...movies,
+        { key: Date.now(), title: newMovieTitle, year: newMovieYear },
+      ]);
+    else alert("영회제목과 개봉연도를 입력해주세요");
+    setNewMovieTitle("");
+    setNewMovieYear("");
   };
 
   const deleteHandler = (key) => {
@@ -38,27 +42,29 @@ function MovieForm() {
       <h1>What is your favorite movie?</h1>
       <div className="MovieForm">
         <form onSubmit={handleSubmit}>
-          <label htmlFor="movieyear">
-            Movie Title
-            <input
-              value={newMovieTitle}
-              onChange={(e) => setNewMovieTitle(e.target.value)}
-              type="text"
-              placeholder="영화이름을 입력하세요"
-            />
-          </label>
-          <label htmlFor="movieyear">
-            Movie Year
-            <input
-              name="movieyear"
-              value={newMovieYear}
-              onChange={(e) => setNewMovieYear(e.target.value)}
-              type="number"
-              placeholder="개봉연도를 입력하세요"
-            />
-          </label>
+          <div>
+            <label htmlFor="movietitle">
+              Movie Title:
+              <input
+                value={newMovieTitle}
+                onChange={(e) => setNewMovieTitle(e.target.value)}
+                type="text"
+                placeholder="영화이름을 입력하세요"
+              />
+            </label>
+            <label htmlFor="movieyear">
+              Movie Year:
+              <input
+                name="movieyear"
+                value={newMovieYear}
+                onChange={(e) => setNewMovieYear(e.target.value)}
+                type="number"
+                placeholder="개봉연도를 입력하세요"
+              />
+            </label>
+          </div>
+          <button>add</button>
         </form>
-        <button>add</button>
       </div>
       {showMovieList}
     </div>
