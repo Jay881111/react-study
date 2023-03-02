@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import Main from "./components/Main";
 import Users from "./components/Users";
+import User from "./components/User";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/movie" element={<MovieForm />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/users/:id" element={<User />} />
       </Routes>
     </div>
   );

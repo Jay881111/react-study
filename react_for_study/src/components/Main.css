@@ -9,3 +9,10 @@ ul > p {
 ul {
   margin-bottom: 50px;
 }
+
+.Main {
+  display: flex;
+  width: full;
+  justify-content: space-between;
+  padding: 30px;
+}

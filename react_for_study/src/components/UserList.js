@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Users.css";
 
 const UserList = ({ users }) => {
@@ -7,9 +8,9 @@ const UserList = ({ users }) => {
     <div className="card_set">
       {users.map((user) => {
         return (
-          <div className="card" key={user.id}>
+          <Link to={`/users/${user.id}`} key={user.id} className="card">
             <div className="card-body"> {user.name}</div>
-          </div>
+          </Link>
         );
       })}
     </div>
@@ -17,3 +18,7 @@ const UserList = ({ users }) => {
 };
 
 export default UserList;
+
+{
+  /* <Link to={`/users/${user.id}`} key={user.id}></Link> */
+}

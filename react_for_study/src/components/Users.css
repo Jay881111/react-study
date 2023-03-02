@@ -2,11 +2,17 @@
   border: 1px solid black;
   text-align: center;
   width: 500px;
+  border: 1px solid black;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-body {
+  padding: 5px;
+  color: black;
 }
 
 .card_set {
   width: full;
-  /* margin-left: auto;
-  margin-right: auto; */
-  align-items: center;
 }

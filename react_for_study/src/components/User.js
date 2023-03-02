@@ -17,13 +17,14 @@ const User = () => {
         setLoading(false);
       });
   }, [id]);
-
+  console.log("userdetail", user);
   const userDetail = loading ? (
     <Spinner />
   ) : (
     <div>
-      <div>{user.name}</div>
-      <div>{user.email}</div>
+      <div>Name: {user.name}</div>
+      <div>Email: {user.email}</div>
+      <div>Phone: {user.phone}</div>
     </div>
   );
 

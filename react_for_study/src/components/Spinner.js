@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./Spinner.css";
 const Spinner = () => {
   return (
     <div
-      className="spinner-border"
+      className="spinner-border text-primary"
       style={{ width: "3rem", height: "3rem" }}
       role="status"
     >

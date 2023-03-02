@@ -15,6 +15,7 @@ const Users = () => {
       setLoading(false);
     });
   }, []);
+  console.log("users", users);
 
   return (
     <div>
