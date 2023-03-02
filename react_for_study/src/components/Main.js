@@ -16,9 +16,9 @@ function Main() {
           <li>props</li>
         </ul>
         <ul>
-          <p>2. Contact</p>
-          <li></li>
-          <li></li>
+          <p>2. Todo List</p>
+          <li>useReducer</li>
+          <li>useContext</li>
         </ul>
         <ul>
           <p>3. User</p>

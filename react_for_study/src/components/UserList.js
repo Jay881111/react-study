@@ -18,7 +18,3 @@ const UserList = ({ users }) => {
 };
 
 export default UserList;
-
-{
-  /* <Link to={`/users/${user.id}`} key={user.id}></Link> */
-}
