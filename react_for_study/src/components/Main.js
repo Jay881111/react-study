@@ -4,7 +4,7 @@ import './Main.css';
 function Main() {
     return (
         <div>
-            <h1 className="text-center mt-5">공부한 내용 정리</h1>
+            <h1>공부한 내용 정리</h1>
             <div className="Main">
                 <ul>
                     <p>0. Main</p>
@@ -12,7 +12,7 @@ function Main() {
                 </ul>
                 <ul>
                     <p>1. Movie</p>
-                    <li>useState</li>
+                    <li>usestate</li>
                     <li>props</li>
                 </ul>
                 <ul>

@@ -7,7 +7,7 @@ function NavBar() {
     <div className="NavBar">
       <Link to="/">Main</Link>
       <Link to="/movie">Movie</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/todolist">Todo List</Link>
       <Link to="/users">User</Link>
     </div>
   );
