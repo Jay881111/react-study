@@ -1,18 +1,18 @@
 ul > li {
-  margin-left: 16px;
+    margin-left: 16px;
 }
 
 ul > p {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 ul {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .Main {
-  display: flex;
-  width: full;
-  justify-content: space-between;
-  padding: 30px;
+    display: flex;
+    width: full;
+    justify-content: space-between;
+    padding: 30px 15% 0px 12%;
 }

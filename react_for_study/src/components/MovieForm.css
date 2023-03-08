@@ -1,38 +1,40 @@
 .Movie {
-  padding: 40px;
+    padding: 40px;
 }
 .MovieForm {
-  display: flex;
+    display: flex;
 }
 
-input[type="text"],
-[type="number"] {
-  margin-left: 5px;
-  width: 200px;
+input[type='text'],
+[type='number'] {
+    margin-left: 5px;
+    width: 200px;
 }
 
 ul > li > span {
-  margin-left: 3px;
+    margin-left: 3px;
 }
 form {
-  display: flex;
+    display: flex;
 }
 
 button {
-  margin-left: 10px;
-  background-color: rgb(173, 170, 170);
-  border-radius: 10px;
-  width: 50px;
-  height: 45px;
-  border: 1px solid black;
-  cursor: pointer;
+    margin-left: 10px;
+    background-color: rgb(173, 170, 170);
+    border-radius: 10px;
+    width: 50px;
+    height: 45px;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 .show_button {
-  width: 50px;
-  height: 20px;
+    width: 50px;
+    height: 30px;
+    padding: 1px;
+    margin-top: 5px;
 }
 
 label {
-  display: block;
+    display: block;
 }
